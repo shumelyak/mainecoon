@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Yeseva+One&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+
+col-1 {flex: 1;}
+col-2 {flex: 2;}
+col-3 {flex: 3;}
+col-4 {flex: 4;}
+col-5 {flex: 5;}
+col-6 {flex: 6;}
+
+header {
+	background-color: #120E10;
+}
+
+.header__logo {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+
+}
+
+.header__content{
+	display: flex;
+}
+
+.header__logo svg {
+	fill: #AF7D4E;
+	stroke: #151313;
+}
+
+
+.header__logo img {
+	fill: #AF7D4E;
+
+}
+
+.header__cat {
+	width: 30%;
+	display: flex;
+	flex: 1;
+}
+
+.header__cat img {
+	object-fit: cover;
+	width: 100%;
+}
+
+.header__title {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 110px 50px 65px 200px;
+}
+
+.lead {
+	color: #AF7D4E;
+	padding-top: 34px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+
+
+h1 {
+	color: #FFF;
+	font-family: 'Yeseva One', serif;
+	font-size: 52px;
+	line-height: 52px;
+}
+
+h2 {
+	color: #FFF;
+	font-family: 'Yeseva One', serif;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.btn {
+	padding: 18px;
+	text-decoration: none;
+	width: 200px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+.btn-dark {
+	background: #120E10;
+	color: #FFF;
+	border: 1px solid #AF7D4E;
+
+}
+
+.btn-dark:hover {
+	background-color: #AF7D4E;
+	transition: background-color 0.3s ease-out;
+}
+
+.pets {
+	background-color: #191517;
+	padding: 200px 110px 10px 110px;
+}
+
+.pets__header {
+	text-align: center;
+}
+
+.slider__tabs {
+	font-size: 18px;
+	padding: 35px 0;
+}
+
+.slider__tabs a {
+	text-decoration: none;
+	color: #4B494A;
+
+}
+
+.slider__tabs ul {
+	display: flex;
+	justify-content: center;
+}
+
+.slider__tabs li {
+	padding: 10px;
+}
+
+.slider__tabs .active a {
+	color: #FFF;
+}
+
+.slider {
+	display: flex;
+}
+
+.slider__col-left,
+.slider__col-right {
+	flex: 1;
+	display: flex;
+	gap: 35px;
+	flex-direction: column;
+
+}
+
+.slider__col-left {
+	marker-right: 35px;
+}
+
+.slider img {
+	object-fit: cover;
+	width: 100%;
+
+}
+
+.pets__footer {
+	display: flex;
+	justify-content: center;
+}
+
+.breed-features {
+	background-color: #191517;
+
+}
+
+.breed__header {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.breed__content {
+	position: relative;
+}
+
+.breed__image {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.breed__image:before {
+	content: '';
+	position: absolute;
+	left: calc((100% / 2) - (520px / 2));
+	top: calc((100% / 2) - (520px / 2));
+	background-color: rgba(0,0,0,0.35);
+	border-radius: 50%;
+	z-index: -1;
+	width: 520px;
+	height: 520px;
+}
+.breed__image:after {
+	content: '';
+	position: absolute;
+	left: calc((100% / 2) - (630px / 2));
+	top: calc((100% / 2) - (630px / 2));
+	border: 1px solid #A07B50;
+	border-radius: 50%;
+	z-index: -1;
+	width: 630px;
+	height: 630px;
+}
+.breed__list {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.breed__item {
+	position: relative;
+	font-size: 14px;
+	line-height: 21px;
+	max-width: 255px;
+}
+.breed__item:before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #A07B50;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.breed__item--1:before {
+	top: 20px;
+	left: 295px;
+}
+.breed__item--1 {
+	text-align: right;
+	top: 170px;
+	left: 132px;
+}
+.breed__item--2:before {
+	top: 2px;
+	left: -63px;
+}
+.breed__item--2 {
+	text-align: left;
+	top: 270px;
+	left: 1090px;
+
+}
+.breed__item--3:before {
+	top: 1px;
+	left: -48px;
+}
+.breed__item--3 {
+	text-align: right;
+	top: 427px;
+	left: 1005px;
+}
+.breed__item--4:before {
+	top: 3px;
+	left: 279px;
+}
+.breed__item--4 {
+	text-align: right;
+	top: 360px;
+	left: 165px;
+}
+.advantages {
+	background-color: #120E10;
+	padding: 100px 50px;
+}
+
+.advantages__content {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.advantages__item {
+	display: flex;
+	width: calc(100%/3);
+	gap: 30px;
+	padding: 40px;
+	background-color: #191517;
+	flex-direction: column;
+	align-items: center;
+}
+.advantages__item p {
+	text-align: center;
+	padding-top: 45px;
+}
+
+.advantages__item:hover {
+	background-color: #A07B50;
+	transition: background-color 0.3s ease-out;
+	border: 10px solid #191517;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
